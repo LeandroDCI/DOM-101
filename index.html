@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Browser 101</title>
+
+	<meta name="description" content="Intro to Browser">
+	<meta name="author" content="Leandro Frigerio">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Browser 101</h1>
+				<h3>The Document Object Model</h3>
+				<h3>Browser History</h3>
+				<h3>JS Engine</h3>
+				<p>
+					<small>Created by <a href="http://leandro.berlin">Leandro Frigerio</a></small>
+				</p>
+			</section>
+
+			<section>
+				<h2>The DOM</h2>
+				<p>
+					"The Document Object Model (DOM) is an application programming interface (API) for HTML and XML
+					documents. </p>
+				It defines the logical structure of documents and the way a document is accessed and manipulated."
+				</p>
+				<p>
+					<small>
+						<a href="https://www.w3.org/TR/REC-DOM-Level-1/introduction.html">W3C Documentation</a>
+					</small>
+				</p>
+
+			</section>
+
+			<section>
+				<section>
+					<h2>Standardization</h2>
+					<p>The principal standardization of the DOM was handled by the World Wide Web Consortium, which last
+						developed a recommendation in 2004.</p>
+				</section>
+				<section>
+					<h2>A brief history of the DOM</h2>
+					<p>The history of the Document Object Model is intertwined with the history of the "browser wars" of
+						the late 1990s between Netscape Navigator and Microsoft Internet Explorer, as well as with that
+						of JavaScript and JScript, the first scripting languages to be widely implemented in the
+						JavaScript engines of web browsers.</p>
+				</section>
+				<section>
+					<h2>Browser War</h2>
+					<p>The browser war was competition for dominance in the usage share of web browsers. The "First
+						Browser
+						War" during the late 1990s pitted Microsoft's Internet Explorer against Netscape's Navigator.
+					</p><small><a
+							href="https://en.wikipedia.org/wiki/Browser_wars#First_Browser_War_(1995%E2%80%932001)">First
+							Browser War</a></small>
+				</section>
+				<section>
+					<p>
+						JavaScript was released by Netscape Communications in 1995 within Netscape Navigator 2.0.
+						Netscape's
+						competitor, Microsoft, released Internet Explorer 3.0 the following year with a reimplementation
+						of
+						JavaScript called JScript. JavaScript and JScript let web developers create web pages with
+						client-side interactivity.</p>
+				</section>
+				<section>
+					<p>The limited facilities for detecting user-generated events and modifying the HTML document in the
+						first generation of these languages eventually became known as "DOM Level 0" or "Legacy DOM".
+					</p>
+				</section>
+				<section>
+					<p>In 1997, Netscape and Microsoft released version 4.0 of Netscape Navigator and Internet Explorer
+						respectively, adding support for Dynamic HTML (DHTML) functionality enabling changes to a loaded
+						HTML document.</p>
+				</section>
+				<section>
+					<p>After the standardization of ECMAScript, the W3C DOM Working Group began drafting a standard DOM
+						specification. The completed specification, known as "DOM Level 1", became a W3C Recommendation
+						in late 1998.</p>
+				</section>
+				<section>
+					<p>By 2005, large parts of W3C DOM were well-supported by common ECMAScript-enabled
+						browsers, including Microsoft Internet Explorer version 6 (from 2001), Opera, Safari and
+						Gecko-based browsers (like Mozilla, Firefox, SeaMonkey and Camino).</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>The Dom and Javascript</h2>
+					<p>
+						"The Document Object Model (DOM) connects web pages to scripts or programming languages by
+						representing the structure of a document—such as the HTML representing a web page—in memory.
+						Usually
+						that means JavaScript, although modelling HTML, SVG, or XML documents as objects is not part of
+						the
+						JavaScript language, as such."
+					</p>
+					<p>
+						<small>
+							<a href="https://en.wikipedia.org/wiki/Document_Object_Model">Wikipedia</a>
+						</small>
+					</p>
+				</section>
+				<section>
+					<h2>Javascript Engine</h2>
+					<p>
+						A JavaScript engine is a computer program that executes JavaScript (JS) code. The first
+						JavaScript engines were mere interpreters, but all relevant modern engines utilize just-in-time
+						compilation for improved performance.
+					</p>
+				</section>
+				<section>
+					<h2>JS Browser Engine</h2>
+					<p>
+						JavaScript engines are typically developed by web browser vendors, and every major browser has
+						one.</p>
+					<p>
+						In a browser, the JavaScript engine runs in concert with the rendering engine via the Document
+						Object Model.
+					</p>
+					<p>
+						The use of JavaScript engines is not limited to browsers. For example, the Chrome V8 engine is a
+						core component of the popular Node.js runtime system.
+					</p>
+				</section>
+				<section>
+					<ul>
+						<li>V8 from Google is the most used JavaScript engine (Google Chrome and
+							Chromium-based browsers, Electron, Node.js runtime system)</li>
+						<li>SpiderMonkey is developed by Mozilla for use in Firefox and its forks. The GNOME Shell uses
+							it for extension support.</li>
+						<li>Chakra is the current engine of the Microsoft Edge browser, forked from the same-named
+							engine of Internet Explorer. However, Microsoft is now rebuilding Edge as a Chromium-based
+							browser. Internet Explorer continues to
+							use its version of Chakra.</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>JavaScriptCore is Apple's engine for its Safari browser. Other WebKit-based browsers also
+							use
+							it. KJS from KDE was the starting point for its development.</li>
+						<li>Facebook created the Hermes engine for Android apps using the React Native framework.</li>
+						<li>QuickJS is a small and easily embeddable engine created by Fabrice Bellard and Charlie
+							Gordon</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h2>Dom: Tree, nodes, objects</h2>
+				<p>
+					The DOM represents a <b>document</b> with a logical tree.
+				</p>
+				<ul>
+					<li>Each branch of the tree ends in a <b>Node</b></li>
+					<li>Each <b>Node</b> contains <b>Objects</b></li>
+					<li>HTML elements as Objects</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>
+					Lets visualize it!
+				</h2>
+				<p>
+					<img
+						src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/DOM-model.svg/440px-DOM-model.svg.png">
+				</p>
+			</section>
+
+			<section>
+				<h2>DOM Document</h2>
+				<p>The DOM Document is the owner of all other objects in your webpage. That means if you want to access
+					any object on your webpage you always have to start with the document. It also contains many
+					important properties and methods that enable us to access and modify our website.</p>
+			</section>
+
+			<section>
+				<h2></h2>
+				<p>With the object model, JavaScript gets all the power it needs to create dynamic HTML:</p>
+				<ul>
+					<li>JS can change all the HTML elements in the page</li>
+					<li>JS can change all the HTML attributes in the page</li>
+					<li>JS can change all the CSS styles in the page</li>
+					<li>JS can remove existing HTML elements/attributes</li>
+					<li>JS can add new HTML elements/attributes</li>
+					<li>JS can react to all existing HTML events in the page</li>
+					<li>JS can create new HTML events in the page</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Methods and Events</h2>
+				<p>
+					DOM methods allow programmatic access to the tree; with them you can change
+					the document's structure, style, or content. Nodes can also have event handlers attached to them;
+					once an event is triggered, the event handlers get executed.
+				</p>
+			</section>
+
+			<section>
+				<h2>Host Environment</h2>
+				<p>The JavaScript language was initially created to be used for web browsers. Since then it has evolved
+					and become a language with many uses and platforms.</p>
+				<p>A platform may be a browser, or a web-server or another host, even a coffee machine. Each of them
+					provides platform-specific functionality. The JavaScript specification calls that a host
+					environment.</p>
+			</section>
+			<section>
+				<p>
+
+					A host environment provides own objects and functions additional to the language core. Web browsers
+					give a means to control web pages. Node.js provides server-side features, and so on.</p>
+			</section>
+
+			<section>
+				<h2>DOM & BOM</h2>
+				<p>The Browser Object Model (BOM) allows JavaScript to talk to the browser about matters other than the
+					content of the page.</p>
+				<p>The <b>window</b> object is the very root element, everything else is attached to it either directly
+					or
+					indirectly. Hence there’s no need to reference it explicitly.</p>
+			</section>
+
+			<section>
+				<img src="https://miro.medium.com/max/708/1*K-CM7OV1lQnnACBeIcagSw.png">
+				<p>
+					<small>From <a href="http://javascript.info">JS info</a></small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Resources</h2>
+				<p>
+					<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM on MDN</a>
+				</p>
+				<p><a href="https://www.w3.org/TR/DOM-Level-2-Core/introduction.html">DOM on W3</a></p>
+				<p>
+					<a href="https://devdocs.io/dom/">DevDocs DOM</a>
+				</p>
+				<p><a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM Wikipedia</a></p>
+				<p>
+					<a href="https://en.wikipedia.org/wiki/Comparison_of_browser_engines">Browser Engines comparison</a>
+				</p>
+			</section>
+
+			<section style="text-align: left;">
+				<h1>THE END</h1>
+				<p>
+					- <a href="https://github.com/hakimel/reveal.js">Reveal.js Source code &amp; documentation</a>
+				</p>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>
